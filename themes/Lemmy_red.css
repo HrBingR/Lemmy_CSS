@@ -2,7 +2,6 @@
 Use with the default litely theme on your Lemmy instance.
 This theme's color scheme is red, and was originally built off the litely red theme before being made to work with the default litely theme*/
 
-css
 .container-lg {
     max-width: 1600px;
 }
@@ -71,11 +70,40 @@ a:visited .d-inline-block {
     background-color: #c80000;
     border-color: #c80000;
 }
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+    color: #fff;
+    background-color: #c80000;
+    border-color: #c80000;
+}
+.btn-outline-secondary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(200,0,0,0.5);
+}
 .btn-outline-secondary {
     color: #c80000;
     border-color: #c80000;
 }
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #c80000;
+    border-color: #c80000;
+}
 .btn-secondary {
+    background-color: #c80000;
+    border-color: #c80000;
+}
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #990f0f;
+    border-color: #c80000;
+}
+.btn-secondary:focus {
+    color: #fff;
+    background-color: #990f0f;
+    border-color: #c80000;
+    box-shadow: 0 0 0 0.2rem rgba(200,0,0,0.5);
+}
+.btn-secondary:not(:disabled):not(.disabled):active {
+    color: #fff;
     background-color: #c80000;
     border-color: #c80000;
 }
