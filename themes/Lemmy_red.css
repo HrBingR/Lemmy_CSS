@@ -1,0 +1,87 @@
+/* This theme aims to reduce whitespace while keeping the site looking modern, and making comment chains a bit easier to follow. 
+Use with the default litely theme on your Lemmy instance.
+This theme's color scheme is red, and was originally built off the litely red theme before being made to work with the default litely theme*/
+
+css
+.container-lg {
+    max-width: 1600px;
+}
+.col-md-8 {
+    max-width: 80%;
+    flex: 0 0 80%;
+}
+.col-md-4 {
+    max-width: 20%;
+    flex: 0 0 20%;
+}
+.col-sm-2 {
+    max-width: 10%;
+    flex: 0 0 10%;
+}
+.col-sm-9 {
+    margin-left: 5px;
+    max-width: 80%;
+    flex: 0 0 80%;
+}
+.post-listing {
+    border: 1px solid rgba(34,34,34,.125);
+    /*border-bottom: 0px;*/
+    border-color: #c80000;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    background-color: #fff;
+    transition: all .2s;
+    box-shadow: 2px 2px 1px #c80000;
+}
+
+hr {
+    display: none;
+}
+.border-top {
+    border-top: 1px solid rgba(34,34,34,.125)!important;
+}
+.border-light {
+    border-color: #e4e4e5!important;
+}
+body {
+    background-color: #ecf0f1;
+}
+.navbar {
+    background-color: #fff;
+}
+.card {
+    background-color: #fff;
+    box-shadow: 2px 2px 1px #c80000;
+}
+.col-12 .card {
+    box-shadow: none;
+}
+.comments {
+    padding-left: 10px;
+    background-color: #fff;
+}
+a:visited .d-inline-block {
+    color:#d6d7d9!important;
+}
+.my-2 {
+    margin-bottom: 0px!important;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active {
+    background-color: #c80000;
+    border-color: #c80000;
+}
+.btn-outline-secondary {
+    color: #c80000;
+    border-color: #c80000;
+}
+.btn-secondary {
+    background-color: #c80000;
+    border-color: #c80000;
+}
+.border-secondary {
+    border-color: #c80000!important;
+}
+.badge-secondary {
+    background-color: #c80000;
+}
