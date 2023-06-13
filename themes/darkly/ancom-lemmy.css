@@ -20,8 +20,8 @@
 	--danger: #ff2020;
 	--light: #101010;
 	--dark: #dee2e6;
-	--font-family-sans-serif: sans-serif
-	--font-family-monospace: monospace
+	--font-family-sans-serif: sans-serif;
+	--font-family-monospace: monospace;
 }
 body {
 	font-family:sans-serif;
