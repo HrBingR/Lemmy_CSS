@@ -15,4 +15,4 @@ To be done:
 
 An example of the blue theme:
 
-![alt text](themes/Blue_theme.png)
+![alt text](themes/litely/Blue_theme.png)
