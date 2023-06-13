@@ -12,3 +12,7 @@ To be done:
 
 * Add more themes
 * Add dark themes
+
+An example of the blue theme:
+
+![alt text](themes/Blue_theme.png)
