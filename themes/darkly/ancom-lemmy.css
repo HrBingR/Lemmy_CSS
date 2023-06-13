@@ -28,7 +28,7 @@ body {
 	color: var(--white);
 	background-color: #000;
 }
-.btn.btn-sm.btn-secondary:focus, .btn.btn-secondary.btn-block:focus .btn.btn-secondary.mb-2:focus {
+.btn.btn-sm.btn-secondary:focus, .btn.btn-secondary.btn-block:focus, .btn.btn-secondary.mb-2:focus {
 	color:var(--white)!important;
 }
 a.text-info:focus, a.text-info:hover, a.text-primary:focus, a.text-primary:hover, .d-inline-block:hover, .text-muted a:hover, .text-muted a:focus, .btn.btn-link.text-muted.py-0.pl-0:focus, .btn-link:hover, .btn-link:focus .btn.btn-sm.text-muted:hover, .btn.btn-sm.text-muted:focus, .btn.focus, .btn:focus {
