@@ -24,14 +24,14 @@
 	--font-family-monospace: monospace
 }
 body {
-	font-family:sans-serif;
+	font-family: sans-serif;
 	color: var(--white);
 	background-color: #000;
 }
-.btn.btn-sm.btn-secondary:focus, .btn.btn-secondary.btn-block:focus, .btn.btn-secondary.mb-2:focus {
+.btn.btn-sm.btn-secondary:focus, .btn.btn-secondary.btn-block:focus .btn.btn-secondary.mb-2:focus {
 	color:var(--white)!important;
 }
-a.text-info:focus, a.text-info:hover, a.text-primary:focus, a.text-primary:hover, .d-inline-block:hover, .text-muted a:hover, .text-muted a:focus, .btn.btn-link.text-muted.py-0.pl-0:focus, .btn-link:hover, .btn-link:focus .btn.btn-sm.text-muted:hover, .btn.btn-sm.text-muted:focus, .btn.focus, .btn:focus {
+a.text-info:focus, a.text-info:hover, a.text-primary:focus, a.text-primary:hover, .d-inline-block:hover, .d-inline-block:focus, .text-muted a:hover, .text-muted a:focus, .btn.btn-link.text-muted.py-0.pl-0:focus, .btn-link:hover, .btn-link:focus, .btn.btn-sm.text-muted:hover, .btn.btn-sm.text-muted:focus, .btn.focus {
 	color: var(--danger) !important;
 }
 .text-info {
@@ -49,6 +49,9 @@ a:hover {
 .btn.btn-outline-secondary.active.pointer:hover, .btn.btn-secondary.btn-block:focus  {
 	color:var(--white);
 }
+.pointer.btn.btn-outline-secondary.false:focus-within {
+	background-color: var(--secondary);
+}
 .card, .mark, .form-control, .form-control:focus {
 	background-color: var(--light);
 	border: 1px hidden;
@@ -56,7 +59,7 @@ a:hover {
 .custom-select:focus, #icon-rss:hover {
 	border-color: var(--red);
 }
-a.badge-primary:focus, a.badge-primary:hover, .btn.btn-outline-secondary.pointer.active:hover, .btn.btn-secondary.btn-block:hover, secondary.btn-block:focus, .btn.btn-secondary:focus {
+a.badge-primary:focus, a.badge-primary:hover, .btn.btn-outline-secondary.pointer.active:hover, .btn.btn-secondary.btn-block:hover, secondary.btn-block:focus, .btn.btn-secondary:focus, .btn.btn-secondary:hover, .pointer.btn.btn-outline-secondary.active:focus-within {
 	background-color: var(--danger);
 }
 .badge-primary, .btn.btn-secondary, .btn.btn-outline-secondary.pointer.active {
@@ -68,7 +71,7 @@ a.badge-primary:focus, a.badge-primary:hover, .btn.btn-outline-secondary.pointer
 .text-muted:hover, a:hover, .btn-link, .btn.btn-link.text-muted:focus {
 	text-decoration: none;
 }
-.text-muted a:hover, .text-muted a:focus, .btn-outline-secondary:hover, .btn.btn-link.text-muted.py-0.pl-0:focus {
+.text-muted a:hover, .text-muted a:focus, .btn-outline-secondary:hover, .btn.btn-link.text-muted.py-0.pl-0:focus, .pointer.btn.btn-outline-secondary.false:focus {
 	color: var(--danger);
 	text-decoration: none;
 }
