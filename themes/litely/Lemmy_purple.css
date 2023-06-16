@@ -92,6 +92,11 @@ a:visited .d-inline-block {
     background-color: #b042ff;
     border-color: #b042ff;
 }
+.btn-secondary:disabled {
+    color: #fff;
+    background-color: #b042ff;
+    border-color: #b042ff;
+}
 .btn-secondary:hover {
     color: #fff;
     background-color: #9300ff;
