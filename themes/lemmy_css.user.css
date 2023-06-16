@@ -21,7 +21,7 @@
     "purple:Purple": "#b042ff"
 }
 ==/UserStyle== */
-@-moz-document domain(beehaw.org) {
+@-moz-document domain("beehaw.org") {
     if lightDark == Litely {
         .container-lg {
             max-width: 1600px;
