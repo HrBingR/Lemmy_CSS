@@ -1,6 +1,7 @@
 /* This theme aims to reduce whitespace while keeping the site looking modern, and making comment chains a bit easier to follow. 
 Use with the default litely theme on your Lemmy instance.
 This theme's color scheme is red, and was originally built off the litely red theme before being made to work with the default litely theme*/
+/* https://github.com/HrBingR/Lemmy_CSS/ */
 
 .container-lg {
     max-width: 1600px;
