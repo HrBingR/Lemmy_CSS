@@ -3,6 +3,15 @@ Use with the default litely theme on your Lemmy instance.
 This theme's color scheme is green, the default litely theme color */
 /* https://github.com/HrBingR/Lemmy_CSS/ */
 
+:root {
+	--pri: #00c853;
+	--sec: #00953e;
+	--lwhite: #fff;
+	--lgray: #e4e4e5;
+	--lgray-dark: #d6d7d9;
+	--llight: #ecf0f1;
+}
+
 .container-lg {
     max-width: 1600px;
 }
@@ -26,13 +35,13 @@ This theme's color scheme is green, the default litely theme color */
 .post-listing {
     border: 1px solid rgba(34,34,34,.125);
     /*border-bottom: 0px;*/
-    border-color: #00c853;
+    border-color: var(--pri);
     border-radius: 5px;
     margin-bottom: 8px;
     padding-top: 10px;
-    background-color: #fff;
+    background-color: var(--lwhite);
     transition: all .2s;
-    box-shadow: 2px 2px 1px #00c853;
+    box-shadow: 2px 2px 1px var(--pri);
 }
 
 hr {
@@ -42,80 +51,80 @@ hr {
     border-top: 1px solid rgba(34,34,34,.125)!important;
 }
 .border-light {
-    border-color: #e4e4e5!important;
+    border-color: var(--lgray)!important;
 }
 body {
-    background-color: #ecf0f1;
+    background-color: var(--llight);
 }
 .navbar {
-    background-color: #fff;
+    background-color: var(--lwhite);
 }
 .card {
-    background-color: #fff;
-    box-shadow: 2px 2px 1px #00c853;
+    background-color: var(--lwhite);
+    box-shadow: 2px 2px 1px var(--pri);
 }
 .col-12 .card {
     box-shadow: none;
 }
 .comments {
     padding-left: 10px;
-    background-color: #fff;
+    background-color: var(--lwhite);
 }
 a:visited .d-inline-block {
-    color:#d6d7d9!important;
+    color:var(--lgray-dark)!important;
 }
 .my-2 {
     margin-bottom: 0px!important;
 }
 .btn-outline-secondary:not(:disabled):not(.disabled).active {
-    background-color: #00c853;
-    border-color: #00c853;
+    background-color: var(--pri);
+    border-color: var(--pri);
 }
 .btn-outline-secondary:not(:disabled):not(.disabled):active {
-    color: #fff;
-    background-color: #00c853;
-    border-color: #00c853;
+    color: var(--lwhite);
+    background-color: var(--pri);
+    border-color: var(--pri);
 }
 .btn-outline-secondary:focus {
     box-shadow: 0 0 0 0.2rem rgba(38,208,109,0.5);
 }
 .btn-outline-secondary {
-    color: #00c853;
-    border-color: #00c853;
+    color: var(--pri);
+    border-color: var(--pri);
 }
 .btn-outline-secondary:hover {
-    color: #fff;
-    background-color: #00c853;
-    border-color: #00c853;
+    color: var(--lwhite);
+    background-color: var(--pri);
+    border-color: var(--pri);
 }
 .btn-secondary {
-    background-color: #00c853;
-    border-color: #00c853;
+    background-color: var(--pri);
+    border-color: var(--pri);
 }
 .btn-secondary:disabled {
-    color: #fff;
-    background-color: #00c853;
-    border-color: #00c853;
+    color: var(--lwhite);
+    background-color: var(--pri);
+    border-color: var(--pri);
 }
 .btn-secondary:hover {
-    color: #fff;
-    background-color: #00953e;
-    border-color: #00c853;
+    color: var(--lwhite);
+    background-color: var(--sec);
+    border-color: var(--pri);
 }
 .btn-secondary:focus {
-    color: #fff;
-    background-color: #00953e;
-    border-color: #00c853;
+    color: var(--lwhite);
+    background-color: var(--sec);
+    border-color: var(--pri);
     box-shadow: 0 0 0 0.2rem rgba(38,208,109,0.5);
 }
 .btn-secondary:not(:disabled):not(.disabled):active {
-    color: #fff;
-    background-color: #00c853;
-    border-color: #00c853;
+    color: var(--lwhite);
+    background-color: var(--pri);
+    border-color: var(--pri);
 }
 .border-secondary {
-    border-color: #00c853!important;
+    border-color: var(--pri)!important;
 }
 .badge-secondary {
-    background-color: #00c853;
+    background-color: var(--pri);
 }
