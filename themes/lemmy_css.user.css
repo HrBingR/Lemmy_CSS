@@ -1,0 +1,291 @@
+/* This theme has been written to work with the UserCSS features of the Stylus extension */
+/* This is for ease of use for users of Stylus */
+/* Currently this UserCSS applies to beehaw.org but more will be added as requested */
+/* https://github.com/HrBingR/Lemmy_CSS */
+
+/* ==UserStyle==
+@name         Lemmy_CSS
+@description  Lemmy_CSS for Stylus UserCSS Compatibility
+@namespace    https://github.com/HrBingR/Lemmy_CSS
+@author       HrBingr
+@version      1.0
+@preprocessor stylus
+@var select   lightDark   "Theme Base" ["Litely*", "Darkly"]
+@var select   colorSchemeDark   "Darkly Color Scheme"   ["Ancom"]
+@var select   colorSchemeLight   "Lightly Color Scheme"    {
+    "green:Green*": "#00c853", 
+    "red:Red": "#c80000", 
+    "blue:Blue": "#35baf6", 
+    "pink:Pink": "#f85084", 
+    "orange:Orange": "#ffa219", 
+    "purple:Purple": "#b042ff"
+}
+==/UserStyle== */
+@-moz-document domain(beehaw.org) {
+    if lightDark == Litely {
+        .container-lg {
+            max-width: 1600px;
+        }
+        .col-md-8 {
+            max-width: 80%;
+            flex: 0 0 80%;
+        }
+        .col-md-4 {
+            max-width: 20%;
+            flex: 0 0 20%;
+        }
+        .col-sm-2 {
+            max-width: 10%;
+            flex: 0 0 10%;
+        }
+        .col-sm-9 {
+            margin-left: 5px;
+            max-width: 80%;
+            flex: 0 0 80%;
+        }
+        .post-listing {
+            border: 1px solid rgba(34,34,34,.125);
+            /*border-bottom: 0px;*/
+            border-color: colorSchemeLight;
+            border-radius: 5px;
+            margin-bottom: 8px;
+            padding-top: 10px;
+            background-color: #fff;
+            transition: all .2s;
+            box-shadow: 2px 2px 1px colorSchemeLight;
+        }
+
+        hr {
+            display: none;
+        }
+        .border-top {
+            border-top: 1px solid rgba(34,34,34,.125)!important;
+        }
+        .border-light {
+            border-color: #e4e4e5!important;
+        }
+        body {
+            background-color: #ecf0f1;
+        }
+        .navbar {
+            background-color: #fff;
+        }
+        .card {
+            background-color: #fff;
+            box-shadow: 2px 2px 1px colorSchemeLight;
+        }
+        .col-12 .card {
+            box-shadow: none;
+        }
+        .comments {
+            padding-left: 10px;
+            background-color: #fff;
+        }
+        a:visited .d-inline-block {
+            color:#d6d7d9!important;
+        }
+        .my-2 {
+            margin-bottom: 0px!important;
+        }
+        .btn-outline-secondary:not(:disabled):not(.disabled).active {
+            background-color: colorSchemeLight;
+            border-color: colorSchemeLight;
+        }
+        .btn-outline-secondary:not(:disabled):not(.disabled):active {
+            color: #fff;
+            background-color: colorSchemeLight;
+            border-color: colorSchemeLight;
+        }
+        .btn-outline-secondary:focus {
+            if colorSchemeLight == #c80000 {
+            box-shadow: 0 0 0 0.2rem rgba(200,0,0,0.5);
+            }
+            else if colorSchemeLight == #00c853 {
+            box-shadow: 0 0 0 0.2rem rgba(38,208,109,0.5);
+            }
+            else if colorSchemeLight == #35baf6 {
+            box-shadow: 0 0 0 0.2rem rgba(53,186,246,0.5);
+            }
+            else if colorSchemeLight == #ffa219 {
+            box-shadow: 0 0 0 0.2rem rgba(255,162,25,0.5);
+            }
+            else if colorSchemeLight == #f85084 {
+            box-shadow: 0 0 0 0.2rem rgba(248,80,132,0.5);
+            }
+            else if colorSchemeLight == #b042ff {
+            box-shadow: 0 0 0 0.2rem rgba(176,66,255,0.5);
+            }
+        }
+        .btn-outline-secondary {
+            color: colorSchemeLight;
+            border-color: colorSchemeLight;
+        }
+        .btn-outline-secondary:hover {
+            color: #fff;
+            background-color: colorSchemeLight;
+            border-color: colorSchemeLight;
+        }
+        .btn-secondary {
+            background-color: colorSchemeLight;
+            border-color: colorSchemeLight;
+            margin-top: 10px;
+        }
+        .btn-secondary:hover {
+            color: #fff;
+            border-color: colorSchemeLight;
+            if colorSchemeLight == #c80000 {
+            background-color: #990f0f;
+            }
+            else if colorSchemeLight == #00c853 {
+            background-color: #00953e;
+            }
+            else if colorSchemeLight == #35baf6 {
+            background-color: #03a9f4;
+            }
+            else if colorSchemeLight == #ffa219 {
+            background-color: #d1820e;
+            }
+            else if colorSchemeLight == #f85084 {
+            background-color: #f61e61;
+            }
+            else if colorSchemeLight == #b042ff {
+            background-color: #9300ff;
+            }
+        }
+        .btn-secondary:disabled {
+            color: #fff;
+            background-color: colorSchemeLight;
+            border-color: colorSchemeLight;
+        }
+        .btn-secondary:focus {
+            color: #fff;
+            border-color: colorSchemeLight;
+            if colorSchemeLight == #c80000 {
+            background-color: #990f0f;
+            box-shadow: 0 0 0 0.2rem rgba(200,0,0,0.5);
+            }
+            else if colorSchemeLight == #00c853 {
+            background-color: #00953e;
+            box-shadow: 0 0 0 0.2rem rgba(38,208,109,0.5);
+            }
+            else if colorSchemeLight == #35baf6 {
+            background-color: #03a9f4;
+            box-shadow: 0 0 0 0.2rem rgba(53,186,246,0.5);
+            }
+            else if colorSchemeLight == #ffa219 {
+            background-color: #d1820e;
+            box-shadow: 0 0 0 0.2rem rgba(255,162,25,0.5);
+            }
+            else if colorSchemeLight == #f85084 {
+            background-color: #f61e61;
+            box-shadow: 0 0 0 0.2rem rgba(248,80,132,0.5);
+            }
+            else if colorSchemeLight == #b042ff {
+            background-color: #9300ff;
+            box-shadow: 0 0 0 0.2rem rgba(176,66,255,0.5);
+            }
+        }
+        .btn-secondary:not(:disabled):not(.disabled):active {
+            color: #fff;
+            background-color: colorSchemeLight;
+            border-color: colorSchemeLight;
+        }
+        .border-secondary {
+            border-color: colorSchemeLight!important;
+        }
+        .badge-secondary {
+            background-color: colorSchemeLight;
+        }
+    }
+    else if lightDark == Darkly {
+        if colorSchemeDark == Ancom {
+            :root {
+                --blue: #375a7f;
+                --indigo: #6610f2;
+                --purple: #6f42c1;
+                --pink: #e83e8c;
+                --red: #cc0000;
+                --orange: #fd7e14;
+                --yellow: #f39c12;
+                --green: #00bc8c;
+                --teal: #20c997;
+                --cyan: #3498db;
+                --white: #fff;
+                --gray: #888;
+                --gray-dark: #303030;
+                --primary: #375a7f;
+                --secondary: #444;
+                --success: #00bc8c;
+                --info: #cc0000;
+                --warning: #f39c12;
+                --danger: #ff2020;
+                --light: #101010;
+                --dark: #dee2e6;
+                --font-family-sans-serif: sans-serif;
+                --font-family-monospace: monospace;
+            }
+            body {
+                font-family: sans-serif;
+                color: var(--white);
+                background-color: #000;
+            }
+            .btn.btn-sm.btn-secondary:focus, .btn.btn-secondary.btn-block:focus .btn.btn-secondary.mb-2:focus {
+                color:var(--white)!important;
+            }
+            a.text-info:focus, a.text-info:hover, a.text-primary:focus, a.text-primary:hover, .d-inline-block:hover, .d-inline-block:focus, .text-muted a:hover, .text-muted a:focus, .btn.btn-link.text-muted.py-0.pl-0:focus, .btn-link:hover, .btn-link:focus, .btn.btn-sm.text-muted:hover, .btn.btn-sm.text-muted:focus, .btn.focus {
+                color: var(--danger) !important;
+            }
+            .text-info {
+                color: var(--red) !important;
+            }
+            .btn.btn-sm.btn-secondary.mr-2, .btn.btn-secondary.btn-block.mb-2 {
+                border: none;
+            }
+            a:hover {
+                color: var(--danger);
+            }
+            .text-primary {
+                color: #ce8d8d!important;
+            }
+            .btn.btn-outline-secondary.active.pointer:hover, .btn.btn-secondary.btn-block:focus  {
+                color:var(--white);
+            }
+            .pointer.btn.btn-outline-secondary.false:focus-within {
+                background-color: var(--secondary);
+            }
+            .card, .mark, .form-control, .form-control:focus {
+                background-color: var(--light);
+                border: 1px hidden;
+            }
+            .custom-select:focus, #icon-rss:hover {
+                border-color: var(--red);
+            }
+            a.badge-primary:focus, a.badge-primary:hover, .btn.btn-outline-secondary.pointer.active:hover, .btn.btn-secondary.btn-block:hover, secondary.btn-block:focus, .btn.btn-secondary:focus, .btn.btn-secondary:hover, .pointer.btn.btn-outline-secondary.active:focus-within {
+                background-color: var(--danger);
+            }
+            .badge-primary, .btn.btn-secondary, .btn.btn-outline-secondary.pointer.active {
+                background-color: var(--red);
+            }
+            .text-muted, .unselectable:hover {
+                color: var(--gray) !important;
+            }
+            .text-muted:hover, a:hover, .btn-link, .btn.btn-link.text-muted:focus {
+                text-decoration: none;
+            }
+            .text-muted a:hover, .text-muted a:focus, .btn-outline-secondary:hover, .btn.btn-link.text-muted.py-0.pl-0:focus, .pointer.btn.btn-outline-secondary.false:focus {
+                color: var(--danger);
+                text-decoration: none;
+            }
+            .btn-outline-secondary {
+                color: var(--red);
+            }
+            .icon.icon-inline.text-success.mr-1 {
+                stroke: #0f0;
+                fill: #0f0;
+            }
+            .btn.focus, .btn:focus, .form-control:focus, a.badge-primary:focus {
+                box-shadow: none;
+            }
+        }
+    }
+}
