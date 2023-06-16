@@ -25,6 +25,42 @@
 	--font-family-sans-serif: sans-serif;
 	--font-family-monospace: monospace;
 }
+@media (min-width: 960px) {
+    .container-lg {
+        max-width: 1200px;
+    }
+    .col-md-8 {
+        max-width: 75%;
+        flex: 0 0 75%;
+    }
+    .col-md-4 {
+        max-width: 25%;
+        flex: 0 0 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-md-8 {
+        max-width: 80%;
+        flex: 0 0 80%;
+    }
+    .col-md-4 {
+        max-width: 20%;
+        flex: 0 0 20%;
+    }
+    .container-lg {
+        max-width: 1600px;
+    }
+}
+.col-sm-2 {
+    max-width: 10%;
+    flex: 0 0 10%;
+}
+.col-sm-9 {
+    margin-left: 5px;
+    max-width: 80%;
+    flex: 0 0 80%;
+}
 body {
 	font-family: sans-serif;
 	color: var(--white);
