@@ -21,8 +21,7 @@
     "orange:Orange": "Orange", 
     "purple:Purple": "Purple",
     "yellow:Yellow": "Yellow",
-    "subtle:Subtle": "Subtle",
-    "catppuccin:Catpuccin Latte": "Catppuccin_Latte"
+    "subtle:Subtle": "Subtle"
     }
 @var select   colorSchemeLight   "Lightly Color Scheme"    {
     "green:Green*": "Green", 
@@ -31,7 +30,8 @@
     "pink:Pink": "Pink", 
     "orange:Orange": "Orange", 
     "purple:Purple": "Purple",
-    "subtle:Subtle": "Subtle"
+    "subtle:Subtle": "Subtle",
+    "catppuccin:Catpuccin Latte": "Catppuccin_Latte"
 }
 ==/UserStyle== */
 @-moz-document domain("beehaw.org") {
