@@ -1,15 +1,16 @@
 /* This theme aims to reduce whitespace while keeping the site looking modern, and making comment chains a bit easier to follow. 
 Use with the default litely theme on your Lemmy instance.
-This theme's color scheme is purple */
+This theme's color scheme is green, the default litely theme color */
 /* https://github.com/HrBingR/Lemmy_CSS/ */
 
 :root {
-	--pri: #b042ff;
-	--sec: #9300ff;
-	--lwhite: #fff;
+	--pri: #FF6600;
+	--sec: #ff5100;
+	--lwhite: #4C4C4C;
 	--lgray: #e4e4e5;
 	--lgray-dark: #d6d7d9;
-	--llight: #ecf0f1;
+	--llight: #222;
+	--muted: #b7b7b7;
 }
 
 @media (min-width: 960px) {
@@ -59,7 +60,24 @@ This theme's color scheme is purple */
     transition: all .2s;
     box-shadow: 2px 2px 1px var(--pri);
 }
-
+.text-body {
+    color: #fff;
+}
+a.text-body:hover {
+    color: var(--pri)!important;
+}
+.text-primary {
+    color: var(--pri)!important;
+}
+.text-muted {
+    color: var(--muted)!important;
+}
+.text-secondary {
+    color: var(--muted)!important;
+}
+a.text-primary:hover {
+    color: #fff!important;
+}
 hr {
     display: none;
 }
@@ -71,6 +89,9 @@ hr {
 }
 body {
     background-color: var(--llight);
+}
+.bg-light {
+    background-color: #4C4C4C!important;
 }
 .navbar {
     background-color: var(--lwhite);
@@ -86,9 +107,6 @@ body {
     padding-left: 10px;
     background-color: var(--lwhite);
 }
-a:visited .d-inline-block {
-    color:var(--lgray-dark)!important;
-}
 .my-2 {
     margin-bottom: 0px!important;
 }
@@ -102,14 +120,13 @@ a:visited .d-inline-block {
     border-color: var(--pri);
 }
 .btn-outline-secondary:focus {
-    box-shadow: 0 0 0 0.2rem rgba(176,66,255,0.5);
+    box-shadow: 0 0 0 0.2rem rgba(255,162,25,0.5);
 }
 .btn-outline-secondary {
     color: var(--pri);
     border-color: var(--pri);
 }
 .btn-outline-secondary:hover {
-    color: var(--lwhite);
     background-color: var(--pri);
     border-color: var(--pri);
 }
@@ -119,7 +136,6 @@ a:visited .d-inline-block {
     margin-top: 10px;
 }
 .btn-secondary:disabled {
-    color: var(--lwhite);
     background-color: var(--pri);
     border-color: var(--pri);
 }
@@ -132,7 +148,7 @@ a:visited .d-inline-block {
     color: var(--lwhite);
     background-color: var(--sec);
     border-color: var(--pri);
-    box-shadow: 0 0 0 0.2rem rgba(176,66,255,0.5);
+    box-shadow: 0 0 0 0.2rem rgba(255,162,25,0.5);
 }
 .btn-secondary:not(:disabled):not(.disabled):active {
     color: var(--lwhite);

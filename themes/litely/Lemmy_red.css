@@ -124,6 +124,7 @@ a:visited .d-inline-block {
 .btn-secondary {
     background-color: var(--pri);
     border-color: var(--pri);
+    margin-top: 10px;
 }
 .btn-secondary:hover {
     color: var(--lwhite);
