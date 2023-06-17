@@ -10,11 +10,17 @@
 @author       HrBingr
 @version      1.0
 @preprocessor stylus
-@var select   lightDark   "Lemmy Settings Theme Base" ["Litely*", "Darkly"]
+@var select   lightDark   "Base Theme (Ensure the same theme is chosen in your Lemmy settings)" ["Litely*", "Darkly"]
 @var select   colorSchemeDark   "Darkly Color Scheme"   {
     "ancom:Ancom": "Ancom",
     "monero:Monero": "Monero",
-    "orange: Orange": "Orange"
+    "green:Green*": "Green",
+    "red:Red": "Red", 
+    "blue:Blue": "Blue", 
+    "pink:Pink": "Pink", 
+    "orange:Orange": "Orange", 
+    "purple:Purple": "Purple",
+    "yellow: Yellow": "Yellow"
     }
 @var select   colorSchemeLight   "Lightly Color Scheme"    {
     "green:Green*": "Green", 
@@ -350,6 +356,45 @@
                     --sec: #ff5100;
                 }
             }
+            else if colorSchemeDark == Green {
+                :root {
+                    --pri: #00c853;
+                    --sec: #00953e;
+                }
+            }
+            else if colorSchemeDark == Red {
+                :root {
+                    --pri: #c80000;
+                    --sec: #990f0f;
+                }
+            }
+            else if colorSchemeDark == Pink {
+                :root {
+                    --pri: #f85084;
+                    --sec: #f61e61;
+                }
+            }
+            else if colorSchemeDark == Purple {
+                :root {
+                    --pri: #b042ff;
+                    --sec: #9300ff;
+                }
+            }
+            else if colorSchemeDark == Blue {
+                :root {
+                    --pri: #35baf6;
+                    --sec: #03a9f4;
+                }
+            }
+            else if colorSchemeDark == Yellow {
+                :root {
+                    --pri: #ffee00;
+                    --sec: #d1b200;
+                }
+                .btn-outline-secondary:not(:disabled):not(.disabled).active {
+                    color: #000!important;
+                }
+            }
             .post-listing {
                 border: 1px solid rgba(34,34,34,.125);
                 /*border-bottom: 0px;*/
@@ -431,6 +476,9 @@
                 border-color: var(--pri);
             }
             .btn-secondary {
+                if colorSchemeDark == Yellow {
+                    color: #000!important;
+                }
                 background-color: var(--pri);
                 border-color: var(--pri);
                 margin-top: 10px;

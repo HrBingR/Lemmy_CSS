@@ -1,6 +1,6 @@
 /* This theme aims to reduce whitespace while keeping the site looking modern, and making comment chains a bit easier to follow. 
-Use with the default litely theme on your Lemmy instance.
-This theme's color scheme is green, the default litely theme color */
+Use with the default darkly theme on your Lemmy instance.
+This theme's color scheme is based on Monero */
 /* https://github.com/HrBingR/Lemmy_CSS/ */
 
 :root {
@@ -140,12 +140,10 @@ body {
     border-color: var(--pri);
 }
 .btn-secondary:hover {
-    color: var(--lwhite);
     background-color: var(--sec);
     border-color: var(--pri);
 }
 .btn-secondary:focus {
-    color: var(--lwhite);
     background-color: var(--sec);
     border-color: var(--pri);
     box-shadow: 0 0 0 0.2rem rgba(255,162,25,0.5);

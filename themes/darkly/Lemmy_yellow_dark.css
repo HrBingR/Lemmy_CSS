@@ -1,11 +1,11 @@
 /* This theme aims to reduce whitespace while keeping the site looking modern, and making comment chains a bit easier to follow. 
 Use with the default darkly theme on your Lemmy instance.
-This theme's color scheme is orange */
+This theme's color scheme is blue */
 /* https://github.com/HrBingR/Lemmy_CSS/ */
 
 :root {
-	--pri: #FF6600;
-	--sec: #ff5100;
+	--pri: #ffee00;
+	--sec: #d1b200;
 	--lwhite: #222;
 	--lgray: #e4e4e5;
 	--lgray-dark: #d6d7d9;
@@ -131,6 +131,7 @@ body {
     border-color: var(--pri);
 }
 .btn-secondary {
+    color: #000!important;
     background-color: var(--pri);
     border-color: var(--pri);
     margin-top: 10px;
@@ -158,4 +159,7 @@ body {
 }
 .badge-secondary {
     background-color: var(--pri);
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active {
+    color: #000!important;
 }
