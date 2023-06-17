@@ -110,6 +110,9 @@
                 --sec: #990f0f;
             }
         }
+        .row {
+            padding-bottom: 10px;
+        }
         .post-listing {
             border: 1px solid rgba(34,34,34,.125);
             /*border-bottom: 0px;*/

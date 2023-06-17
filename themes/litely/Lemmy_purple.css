@@ -145,3 +145,6 @@ a:visited .d-inline-block {
 .badge-secondary {
     background-color: var(--pri);
 }
+.row {
+    padding-bottom: 10px;
+}
