@@ -1,5 +1,3 @@
-/* https://github.com/HrBingR/Lemmy_CSS/ */
-
 :root {
 	--blue: #375a7f;
 	--indigo: #6610f2;
@@ -25,48 +23,12 @@
 	--font-family-sans-serif: sans-serif;
 	--font-family-monospace: monospace;
 }
-@media (min-width: 960px) {
-    .container-lg {
-        max-width: 1200px;
-    }
-    .col-md-8 {
-        max-width: 75%;
-        flex: 0 0 75%;
-    }
-    .col-md-4 {
-        max-width: 25%;
-        flex: 0 0 25%;
-    }
-}
-
-@media (min-width: 1200px) {
-    .col-md-8 {
-        max-width: 80%;
-        flex: 0 0 80%;
-    }
-    .col-md-4 {
-        max-width: 20%;
-        flex: 0 0 20%;
-    }
-    .container-lg {
-        max-width: 1600px;
-    }
-}
-.col-sm-2 {
-    max-width: 10%;
-    flex: 0 0 10%;
-}
-.col-sm-9 {
-    margin-left: 5px;
-    max-width: 80%;
-    flex: 0 0 80%;
-}
 body {
 	font-family: sans-serif;
 	color: var(--white);
 	background-color: #000;
 }
-.btn.btn-sm.btn-secondary:focus, .btn.btn-secondary.btn-block:focus .btn.btn-secondary.mb-2:focus {
+.btn.btn-sm.btn-secondary:focus, .btn.btn-secondary.btn-block:focus .btn.btn-secondary.mb-2:focus, .btn.btn-secondary.d-inline-block.mb-2.mr-3:hover, .btn.btn-secondary.d-inline-block.mb-2.mr-3:focus {
 	color:var(--white)!important;
 }
 a.text-info:focus, a.text-info:hover, a.text-primary:focus, a.text-primary:hover, .d-inline-block:hover, .d-inline-block:focus, .text-muted a:hover, .text-muted a:focus, .btn.btn-link.text-muted.py-0.pl-0:focus, .btn-link:hover, .btn-link:focus, .btn.btn-sm.text-muted:hover, .btn.btn-sm.text-muted:focus, .btn.focus {
@@ -88,7 +50,7 @@ a:hover {
 	color:var(--white);
 }
 .pointer.btn.btn-outline-secondary.false:focus-within {
-	background-color: var(--secondary);
+    background-color: var(--secondary);
 }
 .card, .mark, .form-control, .form-control:focus {
 	background-color: var(--light);
