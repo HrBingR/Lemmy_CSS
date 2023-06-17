@@ -12,6 +12,8 @@ Side note: This is more aimed at users of Lemmy, rather than devs or people host
 
 Themes in the litely folder are to be used with the litely Lemmy theme, while themes in the darkly folder are to be used with the darkly Lemmy theme.
 
+The Lemmy_subtle themes are for those that feel like the colored themes are a bit loud for their taste, but still want the whitespace reduction.
+
 An example of the blue theme:
 
 ![litely_blue](themes/litely/Blue_theme.png)
