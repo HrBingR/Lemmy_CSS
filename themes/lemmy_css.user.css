@@ -8,7 +8,7 @@
 @description  Lemmy_CSS for Stylus UserCSS Compatibility
 @namespace    https://github.com/HrBingR/Lemmy_CSS
 @author       HrBingr
-@version      1.0
+@version      1.1
 @preprocessor stylus
 @var select   lightDark   "Base Theme (Ensure the same theme is chosen in your Lemmy settings)" ["Litely*", "Darkly"]
 @var select   colorSchemeDark   "Darkly Color Scheme"   {
