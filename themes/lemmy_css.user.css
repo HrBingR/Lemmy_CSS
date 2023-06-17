@@ -20,7 +20,8 @@
     "pink:Pink": "Pink", 
     "orange:Orange": "Orange", 
     "purple:Purple": "Purple",
-    "yellow: Yellow": "Yellow"
+    "yellow:Yellow": "Yellow",
+    "subtle:Subtle": "Subtle"
     }
 @var select   colorSchemeLight   "Lightly Color Scheme"    {
     "green:Green*": "Green", 
@@ -28,7 +29,8 @@
     "blue:Blue": "Blue", 
     "pink:Pink": "Pink", 
     "orange:Orange": "Orange", 
-    "purple:Purple": "Purple"
+    "purple:Purple": "Purple",
+    "subtle:Subtle": "Subtle"
 }
 ==/UserStyle== */
 @-moz-document domain("beehaw.org") {
@@ -108,6 +110,12 @@
             :root {
                 --pri: #c80000;
                 --sec: #990f0f;
+            }
+        }
+        else if colorSchemeLight == Subtle {
+            :root {
+                --pri: #999;
+                --sec: #777;
             }
         }
         .row {
@@ -396,6 +404,12 @@
                 }
                 .btn-outline-secondary:not(:disabled):not(.disabled).active {
                     color: #000!important;
+                }
+            }
+            else if colorSchemeDark == Subtle {
+                :root {
+                    --pri: #444;
+                    --sec: #333;
                 }
             }
             .post-listing {
