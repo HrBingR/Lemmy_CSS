@@ -1,0 +1,164 @@
+/* This theme aims to reduce whitespace while keeping the site looking modern, and making comment chains a bit easier to follow. 
+Use with the default litely theme on your Lemmy instance.
+This theme's color scheme is based on catppucin's Latte flavor */
+/* https://github.com/HrBingR/Lemmy_CSS/ */
+
+:root {
+	--pri: #DC8A78;
+	--sec: #ACB0BE;
+	--lwhite: #EFF1F5;
+	--lgray: #e4e4e5;
+	--lgray-dark: #6C6F85;
+	--llight: #DCE0E8;
+	--textcol: #4C4F69;
+	--textpri: #DF8E1D;
+	--subtle: #8C8FA1;
+}
+
+.text-body {
+    color: var(--textcol)!important;
+}
+
+.text-muted {
+    color: var(--subtle)!important;
+}
+
+.text-primary {
+    color: var(--textpri)!important;
+}
+
+a {
+    color: var(--textpri);
+}
+
+@media (min-width: 960px) {
+    .container-lg {
+        max-width: 1200px;
+    }
+    .col-md-8 {
+        max-width: 75%;
+        flex: 0 0 75%;
+    }
+    .col-md-4 {
+        max-width: 25%;
+        flex: 0 0 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-md-8 {
+        max-width: 80%;
+        flex: 0 0 80%;
+    }
+    .col-md-4 {
+        max-width: 20%;
+        flex: 0 0 20%;
+    }
+    .container-lg {
+        max-width: 1600px;
+    }
+}
+.col-sm-2 {
+    max-width: 10%;
+    flex: 0 0 10%;
+}
+.col-sm-9 {
+    margin-left: 5px;
+    max-width: 80%;
+    flex: 0 0 80%;
+}
+.post-listing {
+    border: 1px solid var(--lwhite);
+    /*border-bottom: 0px;*/
+    border-color: var(--lwhite);
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    background-color: var(--lwhite);
+    transition: all .2s;
+}
+
+hr {
+    display: none;
+}
+.border-top {
+    border-top: 1px solid rgba(34,34,34,.125)!important;
+}
+.border-light {
+    border-color: var(--lgrey)!important;
+}
+body {
+    background-color: var(--llight);
+}
+.navbar {
+    background-color: var(--lwhite);
+}
+.card {
+    background-color: var(--lwhite);
+}
+.col-12 .card {
+    box-shadow: none;
+}
+.comments {
+    padding-left: 10px;
+    background-color: var(--lwhite);
+}
+a:visited .d-inline-block {
+    color:var(--lgrey-dark)!important;
+}
+.my-2 {
+    margin-bottom: 0px!important;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active {
+    background-color: var(--pri);
+    border-color: var(--pri);
+}
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+    color: var(--lwhite);
+    background-color: var(--pri);
+    border-color: var(--pri);
+}
+.btn-outline-secondary {
+    color: var(--pri);
+    border-color: var(--pri);
+}
+.btn-outline-secondary:hover {
+    color: var(--lwhite);
+    background-color: var(--pri);
+    border-color: var(--pri);
+}
+.btn-secondary {
+    background-color: var(--pri);
+    border-color: var(--pri);
+    margin-top: 10px;
+}
+.btn-secondary:disabled {
+    color: var(--lwhite);
+    background-color: var(--pri);
+    border-color: var(--pri);
+}
+.btn-secondary:hover {
+    color: var(--lwhite);
+    background-color: var(--sec);
+    border-color: var(--lwhite)!important;
+}
+.btn-secondary:focus {
+    color: var(--lwhite);
+    background-color: var(--sec);
+    border-color: var(--pri);
+    box-shadow: 0 0 0 0.2rem rgba(53,186,246,0.5);
+}
+.btn-secondary:not(:disabled):not(.disabled):active {
+    color: var(--lwhite);
+    background-color: var(--pri);
+    border-color: var(--pri);
+}
+.border-secondary {
+    border-color: var(--lwhite)!important;
+}
+.badge-secondary {
+    background-color: var(--pri);
+}
+.row {
+    padding-bottom: 10px;
+}

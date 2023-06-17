@@ -21,7 +21,8 @@
     "orange:Orange": "Orange", 
     "purple:Purple": "Purple",
     "yellow:Yellow": "Yellow",
-    "subtle:Subtle": "Subtle"
+    "subtle:Subtle": "Subtle",
+    "catppuccin:Catpuccin Latte": "Catppuccin_Latte"
     }
 @var select   colorSchemeLight   "Lightly Color Scheme"    {
     "green:Green*": "Green", 
@@ -116,6 +117,30 @@
             :root {
                 --pri: #999;
                 --sec: #777;
+            }
+        }
+        else if colorSchemeLight == Catppuccin_Latte {
+            :root {
+                --pri: #DC8A78;
+                --sec: #ACB0BE;
+                --lwhite: #EFF1F5;
+                --lgray: #e4e4e5;
+                --lgray-dark: #6C6F85;
+                --llight: #DCE0E8;
+                --textcol: #4C4F69;
+                --textpri: #DF8E1D;
+                --subtle: #8C8FA1;
+            }
+            .text-body {
+                color: var(--textcol)!important;
+            }
+
+            .text-muted {
+                color: var(--subtle)!important;
+            }
+
+            .text-primary {
+                color: var(--textpri)!important;
             }
         }
         .row {
