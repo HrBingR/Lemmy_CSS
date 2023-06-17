@@ -11,14 +11,18 @@
 @version      1.0
 @preprocessor stylus
 @var select   lightDark   "Lemmy Settings Theme Base" ["Litely*", "Darkly"]
-@var select   colorSchemeDark   "Darkly Color Scheme"   ["Ancom", "Monero"]
+@var select   colorSchemeDark   "Darkly Color Scheme"   {
+    "ancom:Ancom": "Ancom",
+    "monero:Monero": "Monero",
+    "orange: Orange": "Orange"
+    }
 @var select   colorSchemeLight   "Lightly Color Scheme"    {
-    "green:Green*": "#00c853", 
-    "red:Red": "#c80000", 
-    "blue:Blue": "#35baf6", 
-    "pink:Pink": "#f85084", 
-    "orange:Orange": "#ffa219", 
-    "purple:Purple": "#b042ff"
+    "green:Green*": "Green", 
+    "red:Red": "Red", 
+    "blue:Blue": "Blue", 
+    "pink:Pink": "Pink", 
+    "orange:Orange": "Orange", 
+    "purple:Purple": "Purple"
 }
 ==/UserStyle== */
 @-moz-document domain("beehaw.org") {
@@ -58,16 +62,58 @@
     flex: 0 0 80%;
 }
     if lightDark == Litely {
+        :root {
+            --lwhite: #fff;
+            --lgray: #e4e4e5;
+            --lgray-dark: #d6d7d9;
+            --llight: #ecf0f1;
+        }
+        if colorSchemeLight == Green {
+            :root {
+                --pri: #00c853;
+                --sec: #00953e;
+            }
+        }
+        else if colorSchemeLight == Blue {
+            :root {
+                --pri: #35baf6;
+                --sec: #03a9f4;
+            }
+        }
+        else if colorSchemeLight == Orange {
+            :root {
+                --pri: #ffa219;
+                --sec: #d1820e;
+            }
+        }
+        else if colorSchemeLight == Pink {
+            :root {
+                --pri: #f85084;
+                --sec: #f61e61;
+            }
+        }
+        else if colorSchemeLight == Purple {
+            :root {
+                --pri: #b042ff;
+                --sec: #9300ff;
+            }
+        }
+        else if colorSchemeLight == Red {
+            :root {
+                --pri: #c80000;
+                --sec: #990f0f;
+            }
+        }
         .post-listing {
             border: 1px solid rgba(34,34,34,.125);
             /*border-bottom: 0px;*/
-            border-color: colorSchemeLight;
+            border-color: var(--pri);
             border-radius: 5px;
             margin-bottom: 8px;
             padding-top: 10px;
-            background-color: #fff;
+            background-color: var(--lwhite);
             transition: all .2s;
-            box-shadow: 2px 2px 1px colorSchemeLight;
+            box-shadow: 2px 2px 1px var(--pri);
         }
 
         hr {
@@ -77,39 +123,39 @@
             border-top: 1px solid rgba(34,34,34,.125)!important;
         }
         .border-light {
-            border-color: #e4e4e5!important;
+            border-color: var(--lgray)!important;
         }
         body {
-            background-color: #ecf0f1;
+            background-color: var(--llight);
         }
         .navbar {
-            background-color: #fff;
+            background-color: var(--lwhite);
         }
         .card {
-            background-color: #fff;
-            box-shadow: 2px 2px 1px colorSchemeLight;
+            background-color: var(--lwhite);
+            box-shadow: 2px 2px 1px var(--pri);
         }
         .col-12 .card {
             box-shadow: none;
         }
         .comments {
             padding-left: 10px;
-            background-color: #fff;
+            background-color: var(--lwhite);
         }
         a:visited .d-inline-block {
-            color:#d6d7d9!important;
+            color:var(--lgray-dark)!important;
         }
         .my-2 {
             margin-bottom: 0px!important;
         }
         .btn-outline-secondary:not(:disabled):not(.disabled).active {
-            background-color: colorSchemeLight;
-            border-color: colorSchemeLight;
+            background-color: var(--pri);
+            border-color: var(--pri);
         }
         .btn-outline-secondary:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: colorSchemeLight;
-            border-color: colorSchemeLight;
+            color: var(--lwhite);
+            background-color: var(--pri);
+            border-color: var(--pri);
         }
         .btn-outline-secondary:focus {
             if colorSchemeLight == #c80000 {
@@ -132,84 +178,61 @@
             }
         }
         .btn-outline-secondary {
-            color: colorSchemeLight;
-            border-color: colorSchemeLight;
+            color: var(--pri);
+            border-color: var(--pri);
         }
         .btn-outline-secondary:hover {
-            color: #fff;
-            background-color: colorSchemeLight;
-            border-color: colorSchemeLight;
+            color: var(--lwhite);
+            background-color: var(--pri);
+            border-color: var(--pri);
         }
         .btn-secondary {
-            background-color: colorSchemeLight;
-            border-color: colorSchemeLight;
-            margin-top: 10px;
-        }
-        .btn-secondary:hover {
-            color: #fff;
-            border-color: colorSchemeLight;
-            if colorSchemeLight == #c80000 {
-            background-color: #990f0f;
-            }
-            else if colorSchemeLight == #00c853 {
-            background-color: #00953e;
-            }
-            else if colorSchemeLight == #35baf6 {
-            background-color: #03a9f4;
-            }
-            else if colorSchemeLight == #ffa219 {
-            background-color: #d1820e;
-            }
-            else if colorSchemeLight == #f85084 {
-            background-color: #f61e61;
-            }
-            else if colorSchemeLight == #b042ff {
-            background-color: #9300ff;
-            }
+            background-color: var(--pri);
+            border-color: var(--pri);
         }
         .btn-secondary:disabled {
-            color: #fff;
-            background-color: colorSchemeLight;
-            border-color: colorSchemeLight;
+            color: var(--lwhite);
+            background-color: var(--pri);
+            border-color: var(--pri);
+        }
+        .btn-secondary:hover {
+            color: var(--lwhite);
+            background-color: var(--sec);
+            border-color: var(--pri);
         }
         .btn-secondary:focus {
-            color: #fff;
-            border-color: colorSchemeLight;
-            if colorSchemeLight == #c80000 {
-            background-color: #990f0f;
+            color: var(--lwhite);
+            background-color: var(--sec);
+            border-color: var(--pri);
+            if colorSchemeLight == Red {
             box-shadow: 0 0 0 0.2rem rgba(200,0,0,0.5);
             }
-            else if colorSchemeLight == #00c853 {
-            background-color: #00953e;
+            else if colorSchemeLight == Green {
             box-shadow: 0 0 0 0.2rem rgba(38,208,109,0.5);
             }
-            else if colorSchemeLight == #35baf6 {
-            background-color: #03a9f4;
+            else if colorSchemeLight == Blue {
             box-shadow: 0 0 0 0.2rem rgba(53,186,246,0.5);
             }
-            else if colorSchemeLight == #ffa219 {
-            background-color: #d1820e;
+            else if colorSchemeLight == Orange {
             box-shadow: 0 0 0 0.2rem rgba(255,162,25,0.5);
             }
-            else if colorSchemeLight == #f85084 {
-            background-color: #f61e61;
+            else if colorSchemeLight == Pink {
             box-shadow: 0 0 0 0.2rem rgba(248,80,132,0.5);
             }
-            else if colorSchemeLight == #b042ff {
-            background-color: #9300ff;
+            else if colorSchemeLight == Purple {
             box-shadow: 0 0 0 0.2rem rgba(176,66,255,0.5);
             }
         }
         .btn-secondary:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: colorSchemeLight;
-            border-color: colorSchemeLight;
+            color: var(--lwhite);
+            background-color: var(--pri);
+            border-color: var(--pri);
         }
         .border-secondary {
-            border-color: colorSchemeLight!important;
+            border-color: var(--pri)!important;
         }
         .badge-secondary {
-            background-color: colorSchemeLight;
+            background-color: var(--pri);
         }
     }
     else if lightDark == Darkly {
@@ -302,15 +325,30 @@
                 box-shadow: none;
             }
         }
-        else if colorSchemeDark == Monero {
+        else {
             :root {
-                --pri: #FF6600;
-                --sec: #ff5100;
-                --lwhite: #4C4C4C;
+                --lwhite: #222;
                 --lgray: #e4e4e5;
                 --lgray-dark: #d6d7d9;
                 --llight: #222;
                 --muted: #b7b7b7;
+            }
+            if colorSchemeDark == Monero {
+                :root {
+                    --pri: #FF6600;
+                    --sec: #ff5100;
+                    --lwhite: #4C4C4C;
+                    --lgray: #e4e4e5;
+                    --lgray-dark: #d6d7d9;
+                    --llight: #222;
+                    --muted: #b7b7b7;
+                }
+            }
+            else if colorSchemeDark == Orange {
+                :root {
+                    --pri: #FF6600;
+                    --sec: #ff5100;
+                }
             }
             .post-listing {
                 border: 1px solid rgba(34,34,34,.125);
