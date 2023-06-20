@@ -41,6 +41,11 @@ This theme's color scheme is pink */
         max-width: 1600px;
     }
 }
+.border-top.border-light {
+    background-color: var(--lwhite)!important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .col-sm-2 {
     max-width: 10%;
     flex: 0 0 10%;

@@ -17,7 +17,11 @@ This theme's color scheme is based on catppucin's Mocha flavor */
 	--subtle: #7F849C;
 	--textinfo: #B4BEFE;
 }
-
+.border-top.border-light {
+    background-color: var(--lwhite)!important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .text-body {
     color: var(--textcol)!important;
 }

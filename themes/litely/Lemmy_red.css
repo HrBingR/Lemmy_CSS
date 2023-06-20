@@ -41,6 +41,11 @@ This theme's color scheme is red, and was originally built off the litely red th
         max-width: 1600px;
     }
 }
+.border-top.border-light {
+    background-color: var(--lwhite)!important;
+    padding-left: 5px;
+    padding-right: 5px;
+}
 .col-md-8 {
     max-width: 80%;
     flex: 0 0 80%;
