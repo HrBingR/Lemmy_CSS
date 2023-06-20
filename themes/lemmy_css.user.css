@@ -10,7 +10,7 @@
 @description  Lemmy_CSS for Stylus UserCSS Compatibility
 @namespace    https://github.com/HrBingR/Lemmy_CSS
 @author       HrBingR
-@version      1.4
+@version      1.5
 @preprocessor stylus
 @var select   lightDark   "Base Theme (Ensure the same theme is chosen in your Lemmy settings)" ["Litely*", "Darkly"]
 @var select   colorSchemeDark   "Darkly Color Scheme"   {
@@ -126,18 +126,30 @@
         }
         else if colorSchemeLight == Catppuccin_Latte {
             :root {
-                --pri: #DC8A78;
+                --pri: #8839EF;
                 --sec: #ACB0BE;
                 --lwhite: #EFF1F5;
                 --lgray: #e4e4e5;
-                --lgray-dark: #6C6F85;
+                --lgray-dark: #CA9EE6;
                 --llight: #DCE0E8;
-                --textcol: #4C4F69;
-                --textpri: #DF8E1D;
+                --textcol: #8839EF;
+                --textpri: #1E66F5;
                 --subtle: #8C8FA1;
             }
+            .post-title a:visited {
+                color: var(--lgray-dark)!important;
+            }
+
             .text-body {
                 color: var(--textcol)!important;
+            }
+
+            .text-body:hover {
+                color: var(--lgray-dark)!important;
+            }
+
+            .text-body:visited {
+                color: var(--lgrey-dark)!important;
             }
 
             .text-muted {
@@ -147,9 +159,16 @@
             .text-primary {
                 color: var(--textpri)!important;
             }
+
+            a.text-primary:hover {
+                color: var(--lgrey-dark)!important;
+            }
         }
         .row {
             padding-bottom: 10px;
+        }
+        .post-title a:visited {
+            color: var(--lgray-dark)!important;
         }
         .post-listing {
             border: 1px solid rgba(34,34,34,.125);

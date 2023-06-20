@@ -6,19 +6,31 @@ This theme's color scheme is based on catppucin's Latte flavor */
 /* Repo: https://github.com/HrBingR/Lemmy_CSS */
 
 :root {
-	--pri: #DC8A78;
+	--pri: #8839EF;
 	--sec: #ACB0BE;
 	--lwhite: #EFF1F5;
 	--lgray: #e4e4e5;
-	--lgray-dark: #6C6F85;
+	--lgray-dark: #CA9EE6;
 	--llight: #DCE0E8;
-	--textcol: #4C4F69;
-	--textpri: #DF8E1D;
+	--textcol: #8839EF;
+	--textpri: #1E66F5;
 	--subtle: #8C8FA1;
+}
+
+.post-title a:visited {
+    color: var(--lgray-dark)!important;
 }
 
 .text-body {
     color: var(--textcol)!important;
+}
+
+.text-body:hover {
+    color: var(--lgray-dark)!important;
+}
+
+.text-body:visited {
+    color: var(--lgrey-dark)!important;
 }
 
 .text-muted {
@@ -29,8 +41,8 @@ This theme's color scheme is based on catppucin's Latte flavor */
     color: var(--textpri)!important;
 }
 
-a {
-    color: var(--textpri);
+a.text-primary:hover {
+    color: var(--lgrey-dark)!important;
 }
 
 @media (min-width: 960px) {
@@ -70,14 +82,15 @@ a {
     flex: 0 0 80%;
 }
 .post-listing {
-    border: 1px solid var(--lwhite);
+    border: 1px solid rgba(34,34,34,.125);
     /*border-bottom: 0px;*/
-    border-color: var(--lwhite);
+    border-color: var(--pri);
     border-radius: 5px;
     margin-bottom: 8px;
     padding-top: 10px;
     background-color: var(--lwhite);
     transition: all .2s;
+    box-shadow: 2px 2px 1px var(--pri);
 }
 
 hr {
@@ -97,6 +110,7 @@ body {
 }
 .card {
     background-color: var(--lwhite);
+    box-shadow: 2px 2px 1px var(--pri);
 }
 .col-12 .card {
     box-shadow: none;
@@ -104,9 +118,6 @@ body {
 .comments {
     padding-left: 10px;
     background-color: var(--lwhite);
-}
-a:visited .d-inline-block {
-    color:var(--lgrey-dark)!important;
 }
 .btn-outline-secondary:not(:disabled):not(.disabled).active {
     background-color: var(--pri);
@@ -153,7 +164,7 @@ a:visited .d-inline-block {
     border-color: var(--pri);
 }
 .border-secondary {
-    border-color: var(--lwhite)!important;
+    border-color: var(--pri)!important;
 }
 .badge-secondary {
     background-color: var(--pri);
