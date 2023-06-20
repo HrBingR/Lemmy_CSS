@@ -1,7 +1,9 @@
 /* This theme aims to reduce whitespace while keeping the site looking modern, and making comment chains a bit easier to follow. 
 Use with the default darkly theme on your Lemmy instance.
 This theme's color scheme is blue */
-/* https://github.com/HrBingR/Lemmy_CSS/ */
+
+/* Author: https://github.com/HrBingR */
+/* Repo: https://github.com/HrBingR/Lemmy_CSS */
 
 :root {
 	--pri: #35baf6;
