@@ -89,9 +89,6 @@ body {
 a:visited .d-inline-block {
     color:var(--lgray-dark)!important;
 }
-.my-2 {
-    margin-bottom: 0px!important;
-}
 .btn-outline-secondary:not(:disabled):not(.disabled).active {
     background-color: var(--pri);
     border-color: var(--pri);
