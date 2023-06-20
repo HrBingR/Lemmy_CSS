@@ -24,4 +24,4 @@ An example of the yellow darkly theme:
 
 #### Note that Lemmy_CSS is marked with [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/?ref=chooser-v1)
 
-Please see the [LICENSE](license.md) for more information.
+Please see the [LICENSE](LICENSE.md) for more information.
