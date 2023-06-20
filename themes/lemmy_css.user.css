@@ -10,7 +10,7 @@
 @description  Lemmy_CSS for Stylus UserCSS Compatibility
 @namespace    https://github.com/HrBingR/Lemmy_CSS
 @author       HrBingR
-@version      1.7
+@version      1.8
 @preprocessor stylus
 @var select   lightDark   "Base Theme (Ensure the same theme is chosen in your Lemmy settings)" ["Litely*", "Darkly"]
 @var select   colorSchemeDark   "Darkly Color Scheme"   {
@@ -26,7 +26,8 @@
     "subtle:Subtle": "Subtle",
     "catppuccin_f:Catppuccin Frappe": "Catppuccin_Frappe",
     "catppuccin_ma:Catppuccin Macchiato": "Catppuccin_Macchiato",
-    "catppuccin_mo:Catppuccin Mocha": "Catppuccin_Mocha"
+    "catppuccin_mo:Catppuccin Mocha": "Catppuccin_Mocha",
+    "dracula:Dracula": "Dracula"
     }
 @var select   colorSchemeLight   "Lightly Color Scheme"    {
     "green:Green*": "Green", 
@@ -559,6 +560,27 @@
                     color: var(--textinfo)!important;
                 }
 
+                .bg-light {
+                    background-color: var(--llight)!important;
+                }
+            }
+            else if colorSchemeDark == Dracula {
+                :root {
+                --pri: #bd93f9;
+                --sec: #44475a;
+                --lwhite: #44475a;
+                --lgray: #e4e4e5;
+                --lgray-dark: #d6d7d9;
+                --llight: #282a36;
+                --muted: #b7b7b7;
+                --textpri: #ffb86c;
+                }
+                a {
+                    color: var(--textpri);
+                }
+                .text-info {
+                    color: var(--textpri)!important;
+                }
                 .bg-light {
                     background-color: var(--llight)!important;
                 }
