@@ -10,7 +10,7 @@
 @description  Lemmy_CSS for Stylus UserCSS Compatibility
 @namespace    https://github.com/HrBingR/Lemmy_CSS
 @author       HrBingR
-@version      1.5
+@version      1.6
 @preprocessor stylus
 @var select   lightDark   "Base Theme (Ensure the same theme is chosen in your Lemmy settings)" ["Litely*", "Darkly"]
 @var select   colorSchemeDark   "Darkly Color Scheme"   {
@@ -252,6 +252,7 @@
         .btn-secondary {
             background-color: var(--pri);
             border-color: var(--pri);
+            margin-top: 10px;
         }
         .btn-secondary:disabled {
             color: var(--lwhite);
