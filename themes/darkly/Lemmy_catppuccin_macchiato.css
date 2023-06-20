@@ -1,0 +1,182 @@
+/* This theme aims to reduce whitespace while keeping the site looking modern, and making comment chains a bit easier to follow. 
+Use with the default darkly theme on your Lemmy instance.
+This theme's color scheme is based on catppucin's Macchiato flavor */
+
+/* Author: https://github.com/HrBingR */
+/* Repo: https://github.com/HrBingR/Lemmy_CSS */
+
+:root {
+	--pri: #B7BDF8;
+	--sec: #5B6078;
+	--lwhite: #181926;
+	--lgray: #e4e4e5;
+	--lgray-dark: #6C6F85;
+	--llight: #24273A;
+	--textcol: #CAD3F5;
+	--textpri: #EED49F;
+	--subtle: #8087A2;
+	--textinfo: #B7BDF8;
+}
+
+.text-body {
+    color: var(--textcol)!important;
+}
+
+.text-muted {
+    color: var(--subtle)!important;
+}
+
+.text-primary {
+    color: var(--textpri)!important;
+}
+
+.text-info {
+    color: var(--textinfo)!important;
+}
+
+.bg-light {
+    background-color: var(--llight)!important;
+}
+
+a {
+    color: var(--textpri);
+}
+
+@media (min-width: 960px) {
+    .container-lg {
+        max-width: 1200px;
+    }
+    .col-md-8 {
+        max-width: 75%;
+        flex: 0 0 75%;
+    }
+    .col-md-4 {
+        max-width: 25%;
+        flex: 0 0 25%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-md-8 {
+        max-width: 80%;
+        flex: 0 0 80%;
+    }
+    .col-md-4 {
+        max-width: 20%;
+        flex: 0 0 20%;
+    }
+    .container-lg {
+        max-width: 1600px;
+    }
+}
+.col-sm-2 {
+    max-width: 10%;
+    flex: 0 0 10%;
+}
+.col-sm-9 {
+    margin-left: 5px;
+    max-width: 80%;
+    flex: 0 0 80%;
+}
+.post-listing {
+    border: 1px solid rgba(34,34,34,.125);
+    /*border-bottom: 0px;*/
+    border-color: var(--pri);
+    border-radius: 5px;
+    margin-bottom: 8px;
+    padding-top: 10px;
+    background-color: var(--lwhite);
+    transition: all .2s;
+    box-shadow: 2px 2px 1px var(--pri);
+}
+a.text-body:hover {
+    color: var(--pri)!important;
+}
+.text-primary {
+    color: var(--pri)!important;
+}
+.text-muted {
+    color: var(--muted)!important;
+}
+.text-secondary {
+    color: var(--muted)!important;
+}
+a.text-primary:hover {
+    color: #fff!important;
+}
+hr {
+    display: none;
+}
+.border-top {
+    border-top: 1px solid rgba(34,34,34,.125)!important;
+}
+.border-light {
+    border-color: var(--lgray)!important;
+}
+body {
+    background-color: var(--llight);
+    color: #FFF;
+}
+.navbar {
+    background-color: var(--lwhite);
+}
+.card {
+    background-color: var(--lwhite);
+    box-shadow: 2px 2px 1px var(--pri);
+}
+.col-12 .card {
+    box-shadow: none;
+}
+.comments {
+    padding-left: 10px;
+    background-color: var(--lwhite);
+}
+.btn-outline-secondary:not(:disabled):not(.disabled).active {
+    background-color: var(--pri);
+    border-color: var(--pri);
+}
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+    color: var(--lwhite);
+    background-color: var(--pri);
+    border-color: var(--pri);
+}
+.btn-outline-secondary:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255,162,25,0.5);
+}
+.btn-outline-secondary {
+    color: var(--pri);
+    border-color: var(--pri);
+}
+.btn-outline-secondary:hover {
+    background-color: var(--pri);
+    border-color: var(--pri);
+}
+.btn-secondary {
+    background-color: var(--pri);
+    border-color: var(--pri);
+    margin-top: 10px;
+}
+.btn-secondary:disabled {
+    background-color: var(--pri);
+    border-color: var(--pri);
+}
+.btn-secondary:hover {
+    background-color: var(--sec);
+    border-color: var(--sec);
+}
+.btn-secondary:focus {
+    background-color: var(--sec);
+    border-color: var(--pri);
+    box-shadow: 0 0 0 0.2rem rgba(255,162,25,0.5);
+}
+.btn-secondary:not(:disabled):not(.disabled):active {
+    color: var(--lwhite);
+    background-color: var(--pri);
+    border-color: var(--pri);
+}
+.border-secondary {
+    border-color: var(--pri)!important;
+}
+.badge-secondary {
+    background-color: var(--pri);
+}

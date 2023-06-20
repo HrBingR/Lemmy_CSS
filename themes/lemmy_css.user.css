@@ -10,7 +10,7 @@
 @description  Lemmy_CSS for Stylus UserCSS Compatibility
 @namespace    https://github.com/HrBingR/Lemmy_CSS
 @author       HrBingR
-@version      1.3
+@version      1.4
 @preprocessor stylus
 @var select   lightDark   "Base Theme (Ensure the same theme is chosen in your Lemmy settings)" ["Litely*", "Darkly"]
 @var select   colorSchemeDark   "Darkly Color Scheme"   {
@@ -23,7 +23,10 @@
     "orange:Orange": "Orange", 
     "purple:Purple": "Purple",
     "yellow:Yellow": "Yellow",
-    "subtle:Subtle": "Subtle"
+    "subtle:Subtle": "Subtle",
+    "catppuccin_f:Catppuccin Frappe": "Catppuccin_Frappe",
+    "catppuccin_ma:Catppuccin Macchiato": "Catppuccin_Macchiato",
+    "catppuccin_mo:Catppuccin Mocha": "Catppuccin_Mocha"
     }
 @var select   colorSchemeLight   "Lightly Color Scheme"    {
     "green:Green*": "Green", 
@@ -434,6 +437,105 @@
                 :root {
                     --pri: #444;
                     --sec: #333;
+                }
+            }
+            else if colorSchemeDark == Catppuccin_Frappe {
+                :root {
+                    --pri: #BABBF1;
+                    --sec: #626880;
+                    --lwhite: #232634;
+                    --lgray: #e4e4e5;
+                    --lgray-dark: #6C6F85;
+                    --llight: #303446;
+                    --textcol: #C6D0F5;
+                    --textpri: #E5C890;
+                    --subtle: #838BA7;
+                    --textinfo: #BABBF1;
+                }
+                .text-body {
+                    color: var(--textcol)!important;
+                }
+
+                .text-muted {
+                    color: var(--subtle)!important;
+                }
+
+                .text-primary {
+                    color: var(--textpri)!important;
+                }
+
+                .text-info {
+                    color: var(--textinfo)!important;
+                }
+
+                .bg-light {
+                    background-color: var(--llight)!important;
+                }
+            }
+            else if colorSchemeDark == Catppuccin_Macchiato {
+                :root {
+                    --pri: #B7BDF8;
+                    --sec: #5B6078;
+                    --lwhite: #181926;
+                    --lgray: #e4e4e5;
+                    --lgray-dark: #6C6F85;
+                    --llight: #24273A;
+                    --textcol: #CAD3F5;
+                    --textpri: #EED49F;
+                    --subtle: #8087A2;
+                    --textinfo: #B7BDF8;
+                }
+                .text-body {
+                    color: var(--textcol)!important;
+                }
+
+                .text-muted {
+                    color: var(--subtle)!important;
+                }
+
+                .text-primary {
+                    color: var(--textpri)!important;
+                }
+
+                .text-info {
+                    color: var(--textinfo)!important;
+                }
+
+                .bg-light {
+                    background-color: var(--llight)!important;
+                }
+            }
+            else if colorSchemeDark == Catppuccin_Mocha {
+                :root {
+                    --pri: #B4BEFE;
+                    --sec: #585B70;
+                    --lwhite: #11111B;
+                    --lgray: #e4e4e5;
+                    --lgray-dark: #6C6F85;
+                    --llight: #1E1E2E;
+                    --textcol: #CDD6F4;
+                    --textpri: #F9E2AF;
+                    --subtle: #7F849C;
+                    --textinfo: #B4BEFE;
+                }
+                .text-body {
+                    color: var(--textcol)!important;
+                }
+
+                .text-muted {
+                    color: var(--subtle)!important;
+                }
+
+                .text-primary {
+                    color: var(--textpri)!important;
+                }
+
+                .text-info {
+                    color: var(--textinfo)!important;
+                }
+
+                .bg-light {
+                    background-color: var(--llight)!important;
                 }
             }
             .post-listing {
