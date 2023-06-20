@@ -43,6 +43,9 @@ This theme's color scheme is based off of the Dracula theme, as outlined here: h
         max-width: 1600px;
     }
 }
+.comments {
+    padding-bottom: 1px;
+}
 a {
     color: var(--textpri);
 }

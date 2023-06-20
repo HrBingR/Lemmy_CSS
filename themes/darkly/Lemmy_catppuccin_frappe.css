@@ -42,6 +42,9 @@ This theme's color scheme is based on catppucin's Frappe' flavor */
     background-color: var(--llight)!important;
 }
 
+.comments {
+    padding-bottom: 1px;
+}
 a {
     color: var(--textpri);
 }

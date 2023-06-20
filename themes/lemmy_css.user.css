@@ -10,7 +10,7 @@
 @description  Lemmy_CSS for Stylus UserCSS Compatibility
 @namespace    https://github.com/HrBingR/Lemmy_CSS
 @author       HrBingR
-@version      1.8
+@version      1.9
 @preprocessor stylus
 @var select   lightDark   "Base Theme (Ensure the same theme is chosen in your Lemmy settings)" ["Litely*", "Darkly"]
 @var select   colorSchemeDark   "Darkly Color Scheme"   {
@@ -164,6 +164,9 @@
             a.text-primary:hover {
                 color: var(--lgrey-dark)!important;
             }
+        }
+        .comments {
+            padding-bottom: 1px;
         }
         .border-top.border-light {
             background-color: var(--lwhite)!important;
@@ -584,6 +587,9 @@
                 .bg-light {
                     background-color: var(--llight)!important;
                 }
+            }
+            .comments {
+                padding-bottom: 1px;
             }
             .border-top.border-light {
                 background-color: var(--lwhite)!important;

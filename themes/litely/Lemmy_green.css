@@ -41,6 +41,9 @@ This theme's color scheme is green, the default litely theme color */
         max-width: 1600px;
     }
 }
+.comments {
+    padding-bottom: 1px;
+}
 .border-top.border-light {
     background-color: var(--lwhite)!important;
     padding-left: 5px;
