@@ -127,6 +127,9 @@ body {
 .navbar {
     background-color: var(--lwhite);
 }
+.shadow-sm {
+    background-color: var(--lwhite);
+}
 .card {
     background-color: var(--lwhite);
     box-shadow: 2px 2px 1px var(--pri);
